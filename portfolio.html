@@ -1,0 +1,262 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JD — Full Stack Developer</title>
+  <meta name="description" content="JD — Full Stack Developer (HTML, JavaScript, Tailwind, React, Flutter, Node.js, MongoDB, PostgreSQL)" />
+  <!-- Tailwind Play CDN for quick prototyping (replace with build-time Tailwind in production) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small custom styles */
+    :root { --glass: rgba(255,255,255,0.06); }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 text-slate-100 antialiased">
+
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center font-bold text-white">JD</div>
+      <div class="hidden sm:block">
+        <h1 class="text-lg font-semibold">JD — Full Stack Developer</h1>
+        <p class="text-xs text-slate-300">HTML • JavaScript • Tailwind • React • Flutter • Node.js • MongoDB • PostgreSQL</p>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="#projects" class="hover:text-white/90 transition">Projects</a>
+      <a href="#skills" class="hover:text-white/90 transition">Skills</a>
+      <a href="#about" class="hover:text-white/90 transition">About</a>
+      <a href="#contact" class="px-4 py-2 bg-indigo-600 rounded-md shadow hover:bg-indigo-500 transition">Contact</a>
+    </nav>
+
+    <button id="menuBtn" class="md:hidden p-2 rounded-md bg-white/5">☰</button>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 pb-24">
+
+    <!-- HERO -->
+    <section id="home" class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-6">
+      <div class="space-y-6">
+        <p class="inline-block px-3 py-1 bg-white/5 rounded-full text-sm text-slate-300">Hello — I'm</p>
+        <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight">JD<span class="text-indigo-400">.</span><br class="hidden sm:block"/> Full Stack Developer</h2>
+        <p class="text-slate-300 max-w-xl">I build fast, accessible, and maintainable web & mobile applications using modern technologies — React, Node.js, Tailwind CSS, Flutter, and robust databases like MongoDB & PostgreSQL.</p>
+
+        <div class="flex gap-4 items-center">
+          <a href="#projects" class="px-5 py-3 bg-indigo-600 rounded-md font-medium shadow hover:bg-indigo-500 transition">See my work</a>
+          <a href="#contact" class="px-5 py-3 border border-white/10 rounded-md text-slate-200 hover:bg-white/5 transition">Get in touch</a>
+        </div>
+
+        <div class="mt-2 text-sm text-slate-400">Available for freelance & full-time roles • Based in India</div>
+      </div>
+
+      <div class="relative">
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-white/3 to-white/2 border border-white/6 backdrop-blur-sm">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center font-bold text-white">JD</div>
+            <div>
+              <div class="text-lg font-semibold">JD — Full Stack Developer</div>
+              <div class="text-slate-300 text-sm">React • Node.js • Flutter</div>
+            </div>
+          </div>
+
+          <div class="mt-6 grid grid-cols-2 gap-4">
+            <div class="p-3 bg-white/5 rounded-lg">
+              <div class="text-xs text-slate-300">Experience</div>
+              <div class="font-semibold text-lg">2+ yrs</div>
+            </div>
+            <div class="p-3 bg-white/5 rounded-lg">
+              <div class="text-xs text-slate-300">Projects</div>
+              <div class="font-semibold text-lg">10+</div>
+            </div>
+            <div class="p-3 bg-white/5 rounded-lg">
+              <div class="text-xs text-slate-300">Stack</div>
+              <div class="font-semibold text-lg">MERN + Flutter</div>
+            </div>
+            <div class="p-3 bg-white/5 rounded-lg">
+              <div class="text-xs text-slate-300">Contact</div>
+              <div class="font-semibold text-lg">email@example.com</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 text-xs text-slate-400">Tip: Replace the placeholders with your own data and links.</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mt-14">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-bold">Selected projects</h3>
+        <a href="#" class="text-sm text-slate-300 hover:underline">View all projects →</a>
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Project card (duplicate these with your real projects) -->
+        <article class="p-5 rounded-xl bg-white/3 border border-white/6">
+          <div class="flex items-center justify-between">
+            <div>
+              <h4 class="font-semibold">Smart Meter Reader</h4>
+              <p class="text-xs text-slate-300">React, Node.js, MongoDB</p>
+            </div>
+            <div class="text-sm font-medium text-indigo-300">Live</div>
+          </div>
+          <p class="mt-3 text-slate-300 text-sm">Image-capture, OCR, and tamper detection to automate meter readings for utility companies.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-xs px-3 py-1 bg-white/5 rounded">Code</a>
+            <a href="#" class="text-xs px-3 py-1 bg-white/5 rounded">Demo</a>
+            <a href="#" class="text-xs px-3 py-1 bg-white/5 rounded">Case study</a>
+          </div>
+        </article>
+
+        <article class="p-5 rounded-xl bg-white/3 border border-white/6">
+          <div class="flex items-center justify-between">
+            <div>
+              <h4 class="font-semibold">E‑commerce Dashboard</h4>
+              <p class="text-xs text-slate-300">React, Tailwind, PostgreSQL</p>
+            </div>
+            <div class="text-sm font-medium text-slate-300">Prototype</div>
+          </div>
+          <p class="mt-3 text-slate-300 text-sm">Admin dashboard showing product analytics, order management, and role-based access control.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-xs px-3 py-1 bg-white/5 rounded">Code</a>
+            <a href="#" class="text-xs px-3 py-1 bg-white/5 rounded">Preview</a>
+          </div>
+        </article>
+
+        <article class="p-5 rounded-xl bg-white/3 border border-white/6">
+          <div class="flex items-center justify-between">
+            <div>
+              <h4 class="font-semibold">Cross‑platform App</h4>
+              <p class="text-xs text-slate-300">Flutter, Firebase</p>
+            </div>
+            <div class="text-sm font-medium text-indigo-300">App</div>
+          </div>
+          <p class="mt-3 text-slate-300 text-sm">A user-focused mobile app built with Flutter and Firebase for fast prototyping and native feel.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-xs px-3 py-1 bg-white/5 rounded">Playstore</a>
+            <a href="#" class="text-xs px-3 py-1 bg-white/5 rounded">App Store</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mt-14">
+      <h3 class="text-2xl font-bold">Core skills</h3>
+      <p class="text-slate-300 mt-2">Technologies I use to build modern web & mobile apps.</p>
+
+      <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <!-- Skill Tile -->
+        <div class="p-4 rounded-lg bg-white/4 text-center">
+          <div class="text-sm font-medium">HTML</div>
+          <div class="text-xs text-slate-300 mt-1">Semantic, accessible markup</div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-white/4 text-center">
+          <div class="text-sm font-medium">JavaScript</div>
+          <div class="text-xs text-slate-300 mt-1">ES6+, async patterns</div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-white/4 text-center">
+          <div class="text-sm font-medium">Tailwind CSS</div>
+          <div class="text-xs text-slate-300 mt-1">Utility-first styling</div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-white/4 text-center">
+          <div class="text-sm font-medium">React</div>
+          <div class="text-xs text-slate-300 mt-1">Hooks, context, router</div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-white/4 text-center">
+          <div class="text-sm font-medium">Flutter</div>
+          <div class="text-xs text-slate-300 mt-1">Cross-platform mobile apps</div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-white/4 text-center">
+          <div class="text-sm font-medium">Node.js</div>
+          <div class="text-xs text-slate-300 mt-1">REST, GraphQL, Express</div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-white/4 text-center">
+          <div class="text-sm font-medium">MongoDB</div>
+          <div class="text-xs text-slate-300 mt-1">NoSQL, Mongoose</div>
+        </div>
+
+        <div class="p-4 rounded-lg bg-white/4 text-center">
+          <div class="text-sm font-medium">PostgreSQL</div>
+          <div class="text-xs text-slate-300 mt-1">Relational design, queries</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="mt-14 grid md:grid-cols-3 gap-6 items-start">
+      <div class="md:col-span-2 p-6 rounded-xl bg-white/3 border border-white/6">
+        <h3 class="text-2xl font-bold">About me</h3>
+        <p class="text-slate-300 mt-3">I'm JD, a full-stack developer who enjoys turning ideas into products. I focus on building user-friendly interfaces and reliable backend systems. My workflow emphasizes good architecture, automated testing, and clean code so teams can scale and maintain products easily.</p>
+
+        <h4 class="mt-6 font-semibold">Workflow</h4>
+        <ul class="list-disc pl-5 text-slate-300 mt-2 space-y-1">
+          <li>Design → Prototype → Implement → Test → Deploy</li>
+          <li>CI/CD with automated tests</li>
+          <li>API-first development and well-documented endpoints</li>
+        </ul>
+      </div>
+
+      <aside class="p-6 rounded-xl bg-white/3 border border-white/6">
+        <h4 class="font-semibold">Quick facts</h4>
+        <div class="mt-3 text-sm text-slate-300 space-y-2">
+          <div><strong>Location:</strong> India</div>
+          <div><strong>Open to:</strong> Remote, Hybrid, On-site</div>
+          <div><strong>Availability:</strong> Immediate</div>
+          <div><strong>Contact:</strong> <a href="mailto:email@example.com" class="underline">email@example.com</a></div>
+        </div>
+
+        <a href="#contact" class="mt-4 inline-block px-4 py-2 bg-indigo-600 rounded-md">Hire me</a>
+      </aside>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-14">
+      <div class="p-6 rounded-xl bg-white/4 border border-white/6">
+        <h3 class="text-2xl font-bold">Contact</h3>
+        <p class="text-slate-300 mt-2">Want to collaborate? Reach out and let's build something great.</p>
+
+        <form class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4" onsubmit="event.preventDefault(); alert('Replace with real form handling (Netlify, Formspree, or your backend)')">
+          <input required placeholder="Your name" class="p-3 rounded bg-white/5 border border-white/5" />
+          <input required type="email" placeholder="Email" class="p-3 rounded bg-white/5 border border-white/5" />
+          <input placeholder="Subject" class="p-3 rounded bg-white/5 border border-white/5 md:col-span-2" />
+          <textarea placeholder="Message" rows="5" class="p-3 rounded bg-white/5 border border-white/5 md:col-span-2"></textarea>
+          <button type="submit" class="md:col-span-2 px-5 py-3 bg-indigo-600 rounded-md">Send message</button>
+        </form>
+
+        <div class="mt-4 text-sm text-slate-300">Or email me directly at <a href="mailto:email@example.com" class="underline">email@example.com</a></div>
+      </div>
+    </section>
+
+    <footer class="mt-12 pb-12 text-center text-slate-400 text-sm">
+      <div>© <span id="year"></span> JD — Built with HTML & Tailwind CSS</div>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:underline">GitHub</a>
+        <a href="#" class="hover:underline">LinkedIn</a>
+        <a href="#" class="hover:underline">Resume</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Small interactivity
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById('menuBtn');
+    menuBtn?.addEventListener('click', () => {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
